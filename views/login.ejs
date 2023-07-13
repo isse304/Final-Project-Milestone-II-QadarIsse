@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home</title>
+     
+      <link rel="stylesheet" href="login.css">
+    <script src = "script.js" defer> </script>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+         <h1>Sign in to Access Forms</h1>
+        <section class="container mail-container">
+         
+           <form method="post" action = "login">
+             
+            <div>
+              <label for="mail">Email</label> <br>
+              <input type="email" id="mail" name="mail" value = "isse304@gmail.com">
+            </div>
+            <div>
+              <label for="password">Password</label> <br>
+              <input type="password" id="password" name="password" value = "123456789">
+            </div>
+            <div class="clearfix"></div>
+            <button id="signInWithMail">Login</button>
+            <button id="signUp"><a href = "signup">Signup</a></button>
+          </form>    
+      </section>
+     
+      </div>
+      <div class="feedbackContainer success">
+        <div class="feedbackIcon"></div>
+        <p class="feedbackMessage">Signed up Successfully</p>
+      </div>
+      <div class="feedbackContainer failure">
+        <div class="feedbackIcon"></div>
+        <p class="feedbackMessage">Signing up failed</p>
+      </div>
+    </main>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#reserved-urls -->
+ 
+   <footer>
+    This site is under development by UW-Oshkosh students as a prototype for Lul Care LLC. Nothing on the site should be construed in any way as being connected with or representative of Lul Care LLC. 
+     <br>
+     <a href ="https://validator.w3.org/nu/?doc=https%3A%2F%2Ffinal-project-milestone-ii-qadarisse.cs346.repl.co%2Flogin"><img id = "validator" src = "valid-html40.png" alt = "valid" ></a>
+   
+  </footer>
+  </body>
+</html>

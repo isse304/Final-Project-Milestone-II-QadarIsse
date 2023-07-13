@@ -1,0 +1,353 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+body {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin: 0 auto;
+  font: 500 100%/1.5 system-ui;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#wrapper {
+  background-color: white;
+  /* to give the page some "depth", add shadow: */
+  box-shadow: 0 0 20px black;
+  
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: 100vh;  
+
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+
+  /* so the main element grows to contain
+     a hovered-over image: */
+  overflow: auto;
+}
+
+#button, #logout{
+  display: flex;
+  justify-content: center;
+}
+
+/* to hide the main element scrollbar when 
+   there's overflow from a hovered-over image: */
+main::-webkit-scrollbar { 
+  display: none; 
+  width: 0;
+}
+body {
+	margin: 0;
+	background: #49c5b6;
+	font-weight: 800;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  background:#2779a7;
+}
+h1 {
+  text-align: center;
+  margin: 30px 0;
+  flex: 1; 
+}
+h2 {
+  text-align: center;
+  margin: 30px 0;
+  flex: 1; 
+  font-style: italic;
+}
+h3 {
+  text-align: center;
+  margin: 30px 0;
+  flex: 1; 
+}
+
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: block;
+  padding-top: 23px;
+
+  position: relative;
+}
+nav a {
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav a:hover {
+  color: #49c5b6;
+}
+img {
+  width:100vw;
+   
+    }
+  
+    p {
+      font-size: 25px;
+    }
+
+#services li{
+  font-size: 20pt;
+}
+#contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+button:first-of-type, button {
+    float: right;
+    margin: 20px 42px 0px 0px;
+    padding: 10px 20px;
+    border: 1px solid #2196f3
+    width: 15%;
+ background-color: #49c5b6;;
+  font-size: 12pt;
+ 
+}
+#form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+input {
+  margin-bottom: 3%;
+}
+
+input:last-of-type {
+  margin-bottom: 0;
+}
+
+input {
+  padding: 3%;
+  width: 100%;
+}
+}
+#divLogin{
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-end;
+}
+footer{
+  border:3px solid black;
+  
+}
+
+#validator{
+  width: 25%;
+}
+p span {
+  background:#fff;
+  padding:0 10px;
+}
+
+@media screen and (max-width: 500px) { 
+header{
+  display: flex;
+  flex-direction: column;
+}
+body{
+  display: flex;
+  align-content: stretch;
+}
+#menu{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right:0px;
+}
+  body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+button{
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+button:hover{
+    opacity: 0.9;
+}
+.nav-brand{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.nav-menu{
+    background-color: gray;
+    box-shadow: 0px 10px 7px 0px rgba(56, 56, 56, 0.3);
+}
+.nav-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--shark-color);
+    padding: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+/* show overlay js */
+.show-overlay{
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-overlay-container{
+    background-color: gray;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+#menu-hide-btn{
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    color: darkgray;
+}
+.nav-links li{
+    margin: 16px 0;
+    position: relative;
+}
+.nav-links li::before, .nav-links li::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #49c5b6;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+.nav-links li::before{
+    top: 0;
+    left: 0;
+}
+.nav-links li::after{
+    bottom: 0;
+    right: 0;
+}
+.nav-links li:hover::before, .nav-links li:hover::after{
+    width: 75%;
+    opacity: 1;
+}
+.nav-links li a{
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    transition: all 300ms ease-in-out;
+}
+.nav-links li:hover a{
+    color: #49c5b6;
+}
+
+}
+
+@media screen  and (min-width: 500px) { 
+   header{
+ display: flex;
+  flex-direction: column;
+  }
+ h1 nav{
+  position:fixed;
+ width: 100%;
+}
+
+#menu{
+  display: flex;
+  flex-direction: row;
+   width: 100vw;
+  
+}
+#menu li{
+  flex-grow: 1;
+  text-align: center;
+}
+  nav a {
+  color: black;
+  margin-left: 1px;
+}
+  #menu-hide-btn, #menu-show-btn{
+    display:none;
+  }
+  
+}
+
+
+
+

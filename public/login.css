@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat Medium';
+}
+
+main {
+    width: 100vw;
+    height: 800px;
+    background-color: #49c5b6;
+}
+
+.container,
+.feedbackContainer,
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+h1 {
+  text-align: center;
+  margin: 30px 0;
+  flex: 1; 
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -80%);
+    background-color: white;
+
+}
+
+button:first-of-type, button {
+    float: right;
+    margin: 20px 42px 0px 0px;
+    padding: 10px 20px;
+    border: 1px solid #2196f3
+    width: 15%;
+ background-color: #49c5b6;;
+  font-size: 12pt;
+ 
+}
+
+.socialMedia-container,
+.phone-container {
+    display: none
+  
+}
+
+.wrapper {
+    position: relative;
+    height: 80%;
+  
+}
+
+input[type = "radio"] {
+    margin: 10px
+}
+
+fieldset, .feedbackContainer {
+    border: rgb(192,192,192,0.1) 1px solid;
+    height: 500px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.12)
+}
+
+.signUp-container fieldset {
+    height: 450px
+}
+
+.phone-container fieldset {
+    height: 550px
+}
+
+.shown-container {
+    display: block
+}
+
+.hidden-container {
+    display: none
+}
+
+input {
+    width: 340px;
+    margin-top: 8px;
+    padding: 2px 6px;
+    border: none;
+    background-color: #f7f7f7;
+    height: 40px;
+    outline-color: #2196f3;
+    font-size: 1rem
+}
+
+button:first-of-type, button{
+    float: right;
+    margin: 20px 42px 0px 0px;
+    padding: 10px 20px;
+    border: 1px solid  color: #49c5b6;
+}
+
+button {
+    color: #49c5b6;
+}
+
+button:first-of-type {
+    float: right;
+    background-color: #2196f3;
+    color: white
+}
+
+a {
+  
+    color: white;
+    
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+button:hover {
+    background-color: #49c5b6;
+    cursor: pointer
+}
+
+button {
+    margin-right: 5px
+}
+
+.clearfix {
+    clear: both
+}
+
+.container div {
+    margin: 20px 40px;
+    position: relative
+}
+
+.mail-container img,
+.phone-container img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: block
+}
+
+.mail-container div:first-of-type,
+.phone-container div:first-of-type {   
+    width: 340px;
+    margin: 40px 40px
+}
+label {
+    top: 56%;
+    left: 6px;
+    color: #505050
+}
+
+
+.socialMedia-container button {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px 40px;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.12);
+    font-size: 1rem;
+    color: #2196f3
+}
+
+.socialMedia-container button:hover {
+    background-color: #49c5b6;
+    box-shadow: 1px 0px 7px 0px rgba(0,0,0,0.15)
+}
+
+.feedbackContainer {
+    height: 300px;
+    width: 300px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    display: none 
+}
+
+.feedbackIcon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+

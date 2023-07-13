@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ListResults</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+ <script src = "./script.js" theme = "blue" defer></script>
+
+</head>
+
+<body>
+  <div id=#wrapper>
+    
+    <header>
+
+    <div id = divLogin>
+   <button id = "button2">Log out</button>
+      </div>
+       <div>
+    <h1> Lul Care LLC </h1>
+   
+    <h2> Honesty Commitment Integrity</h2>
+    </div>
+       <nav class = "nav-menu">
+       <div class = "nav-container">
+    
+<button type = "button" id = "menu-show-btn">
+                <i class = "fas fa-bars"></i>
+            </button>
+        <div class = "nav-overlay">
+                <div class = "nav-overlay-container">
+        <button type = "button" id = "menu-hide-btn">
+                        <i class = "fas fa-close"></i>
+                    </button>
+      <ul id="menu" class = "nav-links">
+         <li><a href="/forms">Add a shift Note</a></li>
+        <li><a href="/listResults">List Form</a></li>
+        <li><a href="/modifyResults">Modify Past Form</a></li>
+        <li><a href="/deleteResults">Delete a Record</a></li>
+      </ul>
+       </div>
+      </div>
+       </div>
+    </nav>
+    </header>
+    <main>
+     
+      <table  class="center"  border  = "1">
+ <tr>
+   <th>Name</th>
+   <th>Breakfast</th>
+   <th>Lunch</th>
+   <th>Dinner</th>
+   <th>Activities</th>
+   <th>Shift Summary</th>
+ </tr>
+    <% for(let i = 0; i <success.length; i++) { %>
+        <tr>
+            <td><%= success[i].name %></td>
+            <td><%= success[i].breakfast %></td>
+          <td><%= success[i].lunch %></td>
+          <td><%= success[i].dinner %></td>
+          <td><%= success[i].activities %></td>
+          <td><%= success[i].shift_summary %></td>
+        </tr>
+    <% } %>
+</table>
+
+
+    </main>
+    <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+ 
+<script>
+  document.getElementById("button2").addEventListener("click", function() {
+  location.href = '/logout';
+     location.href = '/index.html';
+});
+</script>
+  
+       <footer>
+    This site is under development by UW-Oshkosh students as a prototype for Lul Care LLC. Nothing on the site should be construed in any way as being connected with or representative of Lul Care LLC.
+         <br>
+         <a href ="https://validator.w3.org/nu/?doc=https%3A%2F%2Ffinal-project-milestone-ii-qadarisse.cs346.repl.co%2FlistResults"><img id = "validator" src = "valid-html40.png" alt = "valid" ></a>
+   
+  </footer>
+       </div>
+</body>
+
+</html>
